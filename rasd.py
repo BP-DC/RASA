@@ -7,11 +7,11 @@ import argparse
 import os
 
 DESCRIPTION = """
-===========================================================
+========================================================================
 
-    16s rDNA amplicon sequencing analysis (RASA)
+    16s rDNA amplicon sequencing data (RASD) bioinformatics analysis
 
-===========================================================
+========================================================================
 """
 
 VERSION = "Version 1.0"
