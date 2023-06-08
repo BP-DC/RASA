@@ -17,16 +17,16 @@ conda activate qiime2-2022.8
 # Check qiime2 whether work normally
 qiime2 --help
 
-# Exit the newly created qiime2 environment
-conda deactivate
-
 # Install Python packages
 conda install xlrd
+
+# Exit the newly created qiime2 environment
+conda deactivate
 
 echo "======================================================================="
 
 # Create an environment for downstream analysis
-conda create -n downstream
+conda create -n downstream python==3.8.15
 
 # Enter the Downstream environment
 conda activate downstream
@@ -40,10 +40,12 @@ conda install r-showtext
 conda install r-stringr
 conda install r-cluster
 conda install r-clusterSim
+conda install r-wesanderson 
 conda install r-do
 
 # Install Python packages
 conda install pandas
+conda install xlrd
 
 # Exit the newly created downstream environment
 conda deactivate
